@@ -2,7 +2,7 @@ package com.brz.corejava;
 
 import java.util.Scanner;
 
-public class FlipCoin {
+public class CoreAndFunctional {
     public static void coinFlip() {
         int heads = 0, tails = 0;
         Scanner toss = new Scanner(System.in);
@@ -22,6 +22,17 @@ public class FlipCoin {
         System.out.println("count of Heads = " + heads);
         System.out.println("count of Tails = " + tails);
 
+    }
+    public static void  evenOrOdd(){
+        int number;
+        System.out.println("Enter the Number : ");
+        Scanner value = new Scanner(System.in);
+        number = value.nextInt();
+        if (number % 2 == 0) {
+            System.out.println("Entered Number is Even");
+        } else {
+            System.out.println("Entered Number is Odd");
+        }
     }
 }
 
