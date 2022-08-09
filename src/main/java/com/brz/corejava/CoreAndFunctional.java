@@ -23,7 +23,8 @@ public class CoreAndFunctional {
         System.out.println("count of Tails = " + tails);
 
     }
-    public static void  evenOrOdd(){
+
+    public static void evenOrOdd() {
         int number;
         System.out.println("Enter the Number : ");
         Scanner value = new Scanner(System.in);
@@ -34,19 +35,21 @@ public class CoreAndFunctional {
             System.out.println("Entered Number is Odd");
         }
     }
-    public static void powersOfTwo(String[] args){
+
+    public static void powersOfTwo(String[] args) {
         int n = Integer.parseInt(args[0]);
         int i = 0;                                          // count from 0 to N
         int powerOfTwo = 1;                                 // the ith power of two
-         while (i <= n) {
-             System.out.println(i + " " + powerOfTwo);      // print out the power of two
+        while (i <= n) {
+            System.out.println(i + " " + powerOfTwo);      // print out the power of two
 
             powerOfTwo = 2 * powerOfTwo;                    // double to get the next one
-             i = i + 1;
+            i = i + 1;
 
         }
     }
-    public static void leapYear(){
+
+    public static void leapYear() {
         int year;
         System.out.println("Enter an Year : ");
         Scanner yr = new Scanner(System.in);
@@ -56,7 +59,8 @@ public class CoreAndFunctional {
         } else
             System.out.println("Specified year is not a leap year");
     }
-    public static void largestNumber(){
+
+    public static void largestNumber() {
         double X, Y, Z;
 
         Scanner Check = new Scanner(System.in);
@@ -79,6 +83,23 @@ public class CoreAndFunctional {
                 System.out.println("Y = " + Y + " is the largest number.");
             else
                 System.out.println("Z = " + Z + " is the largest number.");
+        }
+    }
+
+    public static void primeFactors() {
+        int number;
+        Scanner prime = new Scanner(System.in);
+        System.out.println("Enter a number : ");
+        number = prime.nextInt();
+
+        for (int i = 2; i < number; i++) {
+            while (number % i == 0) {
+                System.out.println(i + " ");
+                number = number / i;
+            }
+        }
+        if (number > 2) {
+            System.out.println(number);
         }
     }
 }

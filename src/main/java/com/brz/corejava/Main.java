@@ -9,7 +9,7 @@ public class Main {
         System.out.println("welcome to basic core java programming");
         System.out.println("Please Enter Your Choice ");
         System.out.println("1.CoinFlip Programme \n 2.Even Or Odd Programme \n 3.powers of two \n 4.Leap year" +
-                "\n 5. largest number");
+                "\n 5. largest number \n 6.prime factors");
 
         Scanner scanner = new Scanner(System.in);
         int option =scanner.nextInt();
@@ -30,6 +30,9 @@ public class Main {
             case  5:
                 largestNumber();
                 break;
+            case 6:
+                primeFactors();
+
         }
     }
 }
