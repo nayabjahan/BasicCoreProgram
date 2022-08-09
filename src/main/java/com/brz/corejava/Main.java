@@ -9,7 +9,8 @@ public class Main {
         System.out.println("welcome to basic core java programming");
         System.out.println("Please Enter Your Choice ");
         System.out.println("1.CoinFlip Programme \n 2.Even Or Odd Programme \n 3.powers of two \n 4.Leap year" +
-                "\n 5. largest number \n 6.prime factors \n 7.quotient and remainder");
+                "\n 5. largest number \n 6.prime factors \n 7.quotient and remainder \n 8.swap number" +
+                "\n 9.Vowel and consonent");
 
         Scanner scanner = new Scanner(System.in);
         int option =scanner.nextInt();
@@ -34,6 +35,10 @@ public class Main {
                 primeFactors();
             case 7:
                 quotientAndReminder();
+            case 8:
+                swapNumber();
+            case 9:
+                vowel_And_Consonant();
 
         }
     }
