@@ -36,28 +36,27 @@ public class CoreAndFunctional {
     }
     public static void powersOfTwo(String[] args){
         int n = Integer.parseInt(args[0]);
+        int i = 0;                                          // count from 0 to N
+        int powerOfTwo = 1;                                 // the ith power of two
+         while (i <= n) {
+             System.out.println(i + " " + powerOfTwo);      // print out the power of two
 
-        int i = 0; // count from 0 to N
-
-        int powerOfTwo = 1; // the ith power of two
-
-// repeat until i equals n
-
-        while (i <= n) {
-
-            System.out.println(i + " " + powerOfTwo); // print out the power of two
-
-            powerOfTwo = 2 * powerOfTwo; // double to get the next one
-
-            i = i + 1;
+            powerOfTwo = 2 * powerOfTwo;                    // double to get the next one
+             i = i + 1;
 
         }
-
-
-
     }
-
+    public static void leapYear(){
+        int year;
+        System.out.println("Enter an Year : ");
+        Scanner yr = new Scanner(System.in);
+        year = yr.nextInt();
+        if (year % 4 == 0) {
+            System.out.println("Specified year is a leap year");
+        } else
+            System.out.println("Specified year is not a leap year");
     }
+}
 
 
 
